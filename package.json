@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "progress": "^2.0.3",
+    "sanitize-filename": "^1.6.3",
     "ytdl-core": "^4.11.5"
   }
 }
