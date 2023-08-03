@@ -15,7 +15,7 @@ async function download(lines) {
     for (let line of lines) {
         bar.tick(1)
         const info = await ytdl.getBasicInfo(line)
-        ytdl('https://www.youtube.com/watch?v=aLRletzlJ-4', { quality: 'highestaudio' })
+        ytdl(line, { quality: 'highestaudio' })
             .pipe(fs.createWriteStream(`./songs/${sanitize(info.videoDetails.title)}.mp3`));
     }
 }
